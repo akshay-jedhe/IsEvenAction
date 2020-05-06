@@ -1,5 +1,4 @@
 FROM openjdk:8-jdk-alpine
-WORKDIR /github/workspace/
-COPY NumberChecker.java .
-COPY NumberChecker.class .
+COPY NumberChecker.java /NumberChecker.java
+COPY NumberChecker.class /NumberChecker.class
 ENTRYPOINT ["java","NumberChecker"]
